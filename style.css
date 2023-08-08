@@ -55,6 +55,7 @@ header.shadow .navbar a{
 header.shadow .logo{
     color: #020307;
 }
+
 .logo{
     font-size: 1.1rem;
     font-weight: 600;
@@ -242,7 +243,7 @@ header.shadow .logo{
         padding: 50px 4%;
     }
     .home-text{
-        padding: 0 4%;
+        padding: 15rem 4%;
     }
     .home-text h1{
             font-size: 3rem;
@@ -250,31 +251,41 @@ header.shadow .logo{
 }
 @media(max-width: 774px){
     
+    header{
+        padding: 12px 4%;
+    }
     #menu-icon{
         display: initial;
         color: black;
         
+        
     }
     .navbar{
         position: absolute;
-        top: -570px;
-        right: 0;
-        left: 0;
+        top: -1000px;
+      
+        
         display: flex;
         flex-direction: column;
         background: var(--bg-color);
         row-gap: 1.4rem;
         padding: 20px;
+        text-align: center;
         
+    }
+    .navbar a{
+        width: 100%;
+        color: var(--text-color);
     }
     .navbar a::after{
         display: none;
-    }
+    }    
+
     .navbar a:hover{
         color: #e20c0c;
         border-bottom: 1px solid var(--main-color);
     }
-    .navbar .active{
+    .navbar.active{
         top: 100%;
     }
     
